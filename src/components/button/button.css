@@ -1,0 +1,12 @@
+.button {
+  --button-padding-24-icon: 6px;
+  --button-padding-24-text: 0 8px;
+  --button-padding-32-icon: 8px;
+  --button-padding-32-text: 0 12px;
+  --button-padding-40-icon: 12px;
+  --button-padding-40-text: 0 16px;
+
+  &-size-md {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  --border-error: var(--red-550);
+  --border-primary: var(--white-850);
+  --border-selected: var(--green-extra-550);
+  --border-success: var(--green-550);
+
+  --fill-accent: var(--green-extra-750);
+  --fill-accent-disabled: var(--black-550);
+  --fill-accent-hover: var(--green-extra-650);
+  --fill-accent-nonactive: var(--black-300);
+  --fill-accent-nonactive-hover: var(--black-200);
+  --fill-accentBrand: var(--gradient-accent);
+  --fill-accentBrand-disabled: var(--black-550);
+  --fill-accentBrand-hover: var(--yellow-extra-550);
+  --fill-bg: var(--black-800);
+  --fill-color-alert: var(--red-550);
+  --fill-color-success: var(--green-500);
+  --fill-color-warning: var(--orange-500);
+  --fill-counter: var(--yellow-450);
+  --fill-island: var(--black-650);
+  --fill-secondary-default: var(--black-550);
+  --fill-secondary-disabled: var(--black-550);
+  --fill-secondary-hover: var(--black-350);
+  --fill-secondary-subdue-default: var(--black-250);
+  --fill-totalWhite: var(--white-1000);
+  --fill-totalWhite-disabled: var(--black-550);
+
+  --font-age-tag: 500 11px/13px var(--basic-font-family);
+  --font-button-24: 500 13px/15px var(--basic-font-family);
+  --font-button-32: 500 13px/15px var(--basic-font-family);
+  --font-button-40: 500 15px/18px var(--basic-font-family);
+  --font-button-promo-24: 500 13px/15px "Druk Wide Cy", var(--basic-font-family);
+  --font-button-promo-32: 500 13px/15px "Druk Wide Cy", var(--basic-font-family);
+  --font-button-promo-40: 900 16px/19px "Druk Wide Cy", var(--basic-font-family);
+  --font-category-tag: 400 15px/18px var(--basic-font-family);
+  --font-category-tag-number: 400 13px/16px var(--basic-font-family);
+  --font-category-tag-page: 400 20px/28px var(--basic-font-family);
+  --font-checkbox-label: 400 13px/16px var(--basic-font-family);
+  --font-game-tag: 400 15px/18px var(--basic-font-family);
+  --font-input-text: 400 15px/18px var(--basic-font-family);
+  --font-link-m-m: 500 15px/18px var(--basic-font-family);
+  --font-link-m-r: 400 15px/18px var(--basic-font-family);
+  --font-link-s-m: 500 13px/16px var(--basic-font-family);
+  --font-link-s-r: 400 13px/16px var(--basic-font-family);
+  --font-link-xs-r: 400 12px/14px var(--basic-font-family);
+  --font-tag: 400 12px/14px var(--basic-font-family);
+  --font-tag-list: 400 12px/14px var(--basic-font-family);
+  --font-tag-page: 400 15px/18px var(--basic-font-family);
+
+  --gradient-accent: linear-gradient(
+    180deg,
+    var(--green-extra-550) 0%,
+    var(--yellow-extra-550) 100%
+  );
+  --gradient-accent-hover: linear-gradient(
+    180deg,
+    var(--yellow-extra-550) 0%,
+    #a1ff07 100%
+  );
+
+  --icon-accent: var(--green-extra-550);
+  --icon-accent-disabled: var(--black-550);
+  --icon-accent-hover: var(--yellow-extra-550);
+  --icon-error: var(--red-500);
+  --icon-inverse: var(--black-800);
+  --icon-inverse-disabled: var(--black-350);
+  --icon-primary: var(--white-1000);
+  --icon-primary-disabled: var(--black-350);
+  --icon-secondary-default: var(--white-300);
+  --icon-secondary-selected: var(--white-100);
+  --icon-secondary-strong-default: var(--black-350);
+  --icon-secondary-strong-hover-link: var(--blue-450);
+  --icon-success: var(--green-500);
+
+  --line-error: var(--red-550);
+  --line-primary: var(--white-850);
+  --line-selected: var(--green-extra-550);
+  --line-success: var(--green-550);
+
+  --text-accent: var(--green-extra-550);
+  --text-accent-disabled: var(--black-550);
+  --text-accent-hover: var(--yellow-extra-550);
+  --text-error: var(--red-500);
+  --text-inverse: var(--black-800);
+  --text-inverse-disabled: var(--black-350);
+  --text-primary: var(--white-1000);
+  --text-primary-disabled: var(--black-350);
+  --text-secondary-default: var(--white-350);
+  --text-secondary-selected: var(--white-100);
+  --text-secondary-strong-default: var(--white-900);
+  --text-secondary-strong-hover-link: var(--blue-450);
+  --text-success: var(--green-500);
+}
