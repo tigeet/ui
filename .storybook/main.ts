@@ -66,7 +66,6 @@ const config: StorybookConfig = {
       ],
     });
 
-   
     return config;
   },
 };

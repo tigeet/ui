@@ -1,7 +1,11 @@
+"use client";
 import Search from "@/components/search";
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { createContext } from "react";
 
-export default function Home() {
-  return <main className="">Main</main>;
+export default function Page() {
+  // useEffect(() => {
+  //   await fetch('/api/auth/callbackk')
+  // })
+  return <></>;
 }

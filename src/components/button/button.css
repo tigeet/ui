@@ -1,12 +1,100 @@
 .button {
-  --button-padding-24-icon: 6px;
-  --button-padding-24-text: 0 8px;
-  --button-padding-32-icon: 8px;
-  --button-padding-32-text: 0 12px;
-  --button-padding-40-icon: 12px;
-  --button-padding-40-text: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
 
-  &-size-md {
-    padding: 6px;
+  &_variant_primary {
+    background: var(--button-cl-bg-primary);
+    color: var(--button-cl-text-primary);
+  }
+
+  &_variant_secondary {
+    background: var(--button-cl-bg-secondary);
+    color: var(--button-cl-text-secondary);
+  }
+
+  &_variant_outline {
+    background: var(--button-cl-bg-empty);
+    color: var(--button-cl-text-empty);
+  }
+
+  &_size_sm {
+    height: var(--button-height-24);
+    padding: var(--button-padding-24-text);
+    border-radius: var(--button-border-radius-24);
+    gap: var(--button-gap-24);
+    &.button_squared {
+      padding: var(--button-padding-24-icon);
+    }
+  }
+
+  &_size_md {
+    height: var(--button-height-32);
+    padding: var(--button-padding-32-text);
+    border-radius: var(--button-border-radius-32);
+    gap: var(--button-gap-32);
+    &.button_squared {
+      padding: var(--button-padding-32-icon);
+    }
+  }
+
+  &_size_lg {
+    height: var(--button-height-40);
+    padding: var(--button-padding-40-text);
+    border-radius: var(--button-border-radius-40);
+    gap: var(--button-gap-40);
+
+    &.button_squared {
+      padding: var(--button-padding-40-icon);
+    }
+  }
+
+  &_rounded {
+    border-radius: 1000px;
+  }
+  &-text {
+    display: flex;
+  }
+
+  &-icon {
+    display: flex;
+  }
+}
+
+.button_hover.button {
+  &_variant_primary {
+    background: var(--button-cl-bg-primary-hover);
+    color: var(--button-cl-text-primary-hover);
+  }
+
+  &_variant_secondary {
+    background: var(--button-cl-bg-secondary-hover);
+    color: var(--button-cl-text-secondary-hover);
+  }
+
+  &_variant_outline {
+    background: var(--button-cl-bg-empty-hover);
+    color: var(--button-cl-text-empty-hover);
+  }
+}
+
+.button_disabled.button {
+  &_variant_primary {
+    background: var(--button-cl-bg-primary-disabled);
+    color: var(--button-cl-text-primary-disabled);
+  }
+
+  &_variant_secondary {
+    background: var(--button-cl-bg-secondary-disabled);
+    color: var(--button-cl-text-secondary-disabled);
+  }
+
+  &_variant_outline {
+    background: var(--button-cl-bg-empty-disabled);
+    color: var(--button-cl-text-empty-disabled);
   }
 }

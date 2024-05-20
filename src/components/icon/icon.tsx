@@ -28,6 +28,7 @@ type Props = {
   size?: "sm" | "md" | "lg";
   variant?: "primary" | "secondary" | "outline";
   className?: string;
+  disabled?: boolean;
   name: IconName;
 };
 

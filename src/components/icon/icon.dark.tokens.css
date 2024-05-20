@@ -1,0 +1,15 @@
+:root {
+  --icon-accent: var(--green-extra-550);
+  --icon-accent-disabled: var(--black-550);
+  --icon-accent-hover: var(--yellow-extra-550);
+  --icon-error: var(--red-500);
+  --icon-inverse: var(--black-800);
+  --icon-inverse-disabled: var(--black-350);
+  --icon-primary: var(--white-1000);
+  --icon-primary-disabled: var(--black-350);
+  --icon-secondary-default: var(--white-300);
+  --icon-secondary-selected: var(--white-100);
+  --icon-secondary-strong-default: var(--black-350);
+  --icon-secondary-strong-hover-link: var(--blue-450);
+  --icon-success: var(--green-500);
+}

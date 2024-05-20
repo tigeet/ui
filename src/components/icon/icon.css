@@ -1,6 +1,29 @@
 .icon {
   display: inline-block;
   &_variant_primary {
+    color: var(--icon-inverse);
+  }
+
+  &_variant_secondary {
     color: var(--icon-primary);
+  }
+
+  &_variant_outline {
+    color: var(--icon-accent);
+  }
+
+  &_size_sm {
+    width: 12px;
+    height: 12px;
+  }
+
+  &_size_md {
+    width: 16px;
+    height: 16px;
+  }
+
+  &_size_lg {
+    width: 16px;
+    height: 16px;
   }
 }
