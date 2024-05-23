@@ -1,5 +1,4 @@
-"use client";
-import { MouseEventHandler, ReactNode, memo, useCallback } from "react";
+import { MouseEventHandler, memo, useCallback } from "react";
 import { cn } from "@bem-react/classname";
 import clsx from "clsx";
 import "./button.css";

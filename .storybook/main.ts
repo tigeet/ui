@@ -17,7 +17,6 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
   webpackFinal: async (config, { configType }) => {
-    // @ts-ignore
     config!.resolve!.plugins = [
       new TsconfigPathsPlugin({
         configFile: path.resolve(__dirname, "../tsconfig.json"),
@@ -25,11 +24,11 @@ const config: StorybookConfig = {
     ];
 
     config.module.rules
-      .filter((rule) => rule.test.test(".css"))
+      .filter((rule) => rule?.test?.test(".css"))
       .forEach((rule) => (rule.exclude = /\.css$/i));
 
     config.module.rules
-      .filter((rule) => rule.test.test(".scss"))
+      .filter((rule) => rule?.test?.test(".scss"))
       .forEach((rule) => (rule.exclude = /\.scss$/i));
 
     config.module?.rules?.push({
@@ -53,10 +52,9 @@ const config: StorybookConfig = {
     });
 
     config.module.rules
-      .filter((rule) => rule.test.test(".svg"))
+      .filter((rule) => rule?.test?.test(".svg"))
       .forEach((rule) => (rule.exclude = /\.svg$/i));
 
-    // add SVGR instead
     config.module.rules.push({
       test: /\.svg$/,
       use: [

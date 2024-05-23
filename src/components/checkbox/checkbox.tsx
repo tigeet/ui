@@ -1,11 +1,8 @@
 import { cn } from "@bem-react/classname";
 import clsx from "clsx";
-import React, { ChangeEventHandler, ReactNode, useCallback } from "react";
+import React, { ChangeEventHandler } from "react";
 import "./checkbox.css";
-import getFont, { FontProps } from "@/utils/getFont/getFont";
 import useHover from "@/hooks/useHover";
-import usePress from "@/hooks/usePress";
-import mergeHandlers from "@/utils/mergeHandlers";
 import Icon from "../icon/icon";
 
 type Props = {

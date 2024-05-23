@@ -1,29 +1,23 @@
 {
-  "name": "next-prisma",
+  "name": "ui",
   "version": "0.1.0",
   "private": true,
+  "license": "Apache-2.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "sb": "OUT_DIR='./theme' yarn tokens:watch && storybook dev -p 6006",
-    "tokens": "ts-node src/utils/tokens.ts",
-    "tokens:watch": "WATCH=true ts-node src/utils/tokens.ts"
+    "sb": "OUT='./theme' yarn tokens && storybook dev -p 6006",
+    "tokens": "source ./scripts/tokens.sh",
+    "tokens:watch": "WATCH=true source ./scripts/tokens.sh"
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^3.5.0",
     "@bem-react/classname": "^1.6.0",
-    "@prisma/client": "^5.14.0",
     "@storybook/addon-essentials": "^8.1.1",
     "@storybook/addon-interactions": "^8.1.1",
     "@storybook/addon-links": "^8.1.1",
     "@storybook/addon-onboarding": "^8.1.1",
     "@svgr/webpack": "^8.1.0",
-    "@tanstack/react-query": "^5.37.1",
     "clsx": "^2.1.1",
     "css-loader": "^7.1.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "file-loader": "^6.2.0",
     "glob-watcher": "^6.0.0",
     "next": "14.2.3",
@@ -47,7 +41,6 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
-    "husky": "^8.0.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

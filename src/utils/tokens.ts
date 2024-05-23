@@ -15,7 +15,7 @@ type Theme = (typeof themes)[number];
 type RawTokens = Record<string, string>;
 
 const makeConfig = (): Config => {
-  const outDir = path.resolve(process.env.OUT_DIR ?? "");
+  const outDir = path.resolve(process.env.OUT ?? "");
   const watch = Boolean(process.env.WATCH);
 
   return { outDir, watch };
@@ -60,9 +60,9 @@ const main = async () => {
   for (const theme of themes) {
     const pattern = [
       `src/**/*${theme}.tokens.css`,
-      `**/theme/palette.${theme}.css`,
-      `**/theme/semantic.${theme}.css`,
-      `**/theme/global.${theme}.css`,
+      `src/theme/palette.${theme}.css`,
+      `src/theme/semantic.${theme}.css`,
+      `src/theme/global.${theme}.css`,
     ];
 
     if (config.watch) {

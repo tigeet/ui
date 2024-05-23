@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import React from "react";
-import Icon, { iconNames, icons } from "./icon";
+import Icon, { iconNames } from "./icon";
 const meta: Meta<typeof Icon> = {
   component: Icon,
   title: "Icon",
@@ -12,16 +12,24 @@ type Story = StoryObj<typeof Icon>;
 export const Default: Story = {
   argTypes: {
     size: {
-      control: { type: "select" },
+      control: { type: "inline-radio" },
+      options: ["sm", "md", "lg"],
     },
+    variant: {
+      control: "inline-radio",
+      options: ["primary", "secondary", "outline"],
+    },
+    disabled: { control: "boolean" },
   },
   args: {
-    size: "sm",
+    size: "md",
+    variant: "outline",
+    disabled: false,
   },
   render: (args) => (
     <>
       {iconNames.map((name) => (
-        <Icon key={name} name={name} />
+        <Icon {...args} key={name} name={name} />
       ))}
     </>
   ),
