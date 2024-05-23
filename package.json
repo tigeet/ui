@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "sb": "storybook dev -p 6006",
-    "tokens": "ts-node src/utils/tokens.ts"
+    "sb": "OUT_DIR='./theme' yarn tokens:watch && storybook dev -p 6006",
+    "tokens": "ts-node src/utils/tokens.ts",
+    "tokens:watch": "WATCH=true ts-node src/utils/tokens.ts"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",

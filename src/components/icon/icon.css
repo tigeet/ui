@@ -1,5 +1,5 @@
 .icon {
-  display: inline-block;
+  display: inline-flex;
   &_variant_primary {
     color: var(--icon-inverse);
   }
@@ -25,5 +25,19 @@
   &_size_lg {
     width: 16px;
     height: 16px;
+  }
+}
+
+.icon_disabled.icon {
+  &_variant_primary {
+    color: var(--icon-inverse-disabled);
+  }
+
+  &_variant_secondary {
+    color: var(--icon-primary-disabled);
+  }
+
+  &_variant_outline {
+    color: var(--icon-accent-disabled);
   }
 }

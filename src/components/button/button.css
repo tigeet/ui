@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   outline: none;
+  cursor: pointer;
+  transition: 0.3s transform ease;
 
   &_variant_primary {
     background: var(--button-cl-bg-primary);
@@ -62,6 +64,11 @@
 
   &-icon {
     display: flex;
+  }
+
+  &_pressed {
+    transform: scale(0.95);
+    transition: 0.15s transform ease;
   }
 }
 

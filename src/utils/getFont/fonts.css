@@ -1,0 +1,86 @@
+.font {
+  &_age-tag {
+    font: var(--font-age-tag);
+  }
+  &_bubble-text {
+    font: var(--font-bubble-text);
+  }
+  &_button-sm {
+    font: var(--font-button-sm);
+  }
+  &_button-md {
+    font: var(--font-button-md);
+  }
+  &_button-lg {
+    font: var(--font-button-lg);
+  }
+  &_button-promo-24 {
+    font: var(--font-button-promo-24);
+  }
+  &_button-promo-32 {
+    font: var(--font-button-promo-32);
+  }
+  &_button-promo-40 {
+    font: var(--font-button-promo-40);
+  }
+  &_category-tag {
+    font: var(--font-category-tag);
+  }
+  &_category-tag-number {
+    font: var(--font-category-tag-number);
+  }
+  &_category-tag-page {
+    font: var(--font-category-tag-page);
+  }
+  &_checkbox-label {
+    font: var(--font-checkbox-label);
+  }
+  &_game-tag {
+    font: var(--font-game-tag);
+  }
+  &_guard-description {
+    font: var(--font-guard-description);
+  }
+  &_guard-tag {
+    font: var(--font-guard-tag);
+  }
+  &_headline {
+    font: var(--font-headline);
+  }
+  &_input-text {
+    font: var(--font-input-text);
+  }
+  &_link-m-m {
+    font: var(--font-link-m-m);
+  }
+  &_link-m-r {
+    font: var(--font-link-m-r);
+  }
+  &_link-s-m {
+    font: var(--font-link-s-m);
+  }
+  &_link-s-r {
+    font: var(--font-link-s-r);
+  }
+  &_link-xs-r {
+    font: var(--font-link-xs-r);
+  }
+  &_profile-description {
+    font: var(--font-profile-description);
+  }
+  &_subscription {
+    font: var(--font-subscription);
+  }
+  &_tag {
+    font: var(--font-tag);
+  }
+  &_tag-list {
+    font: var(--font-tag-list);
+  }
+  &_tag-page {
+    font: var(--font-tag-page);
+  }
+  &_text-area {
+    font: var(--font-text-area);
+  }
+}

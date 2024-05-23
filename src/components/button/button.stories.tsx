@@ -60,18 +60,13 @@ export const Preview: Story = {
                 variant={variant}
                 text="Placeholder"
               />
-              <Button
-                {...args}
-                size={size}
-                variant={variant}
-                icon={<Icon name="x" size={size} variant={variant} />}
-              />
+              <Button {...args} size={size} variant={variant} icon="x" />
               <Button
                 {...args}
                 size={size}
                 variant={variant}
                 text="Placeholder"
-                icon={<Icon name="x" size={size} variant={variant} />}
+                icon="x"
               />
             </div>
           ))}

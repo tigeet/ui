@@ -25,27 +25,7 @@
   --fill-totalWhite: var(--white-1000);
   --fill-totalWhite-disabled: var(--black-550);
 
-  --font-age-tag: 500 11px/13px var(--basic-font-family);
-  --font-button-24: 500 13px/15px var(--basic-font-family);
-  --font-button-32: 500 13px/15px var(--basic-font-family);
-  --font-button-40: 500 15px/18px var(--basic-font-family);
-  --font-button-promo-24: 500 13px/15px "Druk Wide Cy", var(--basic-font-family);
-  --font-button-promo-32: 500 13px/15px "Druk Wide Cy", var(--basic-font-family);
-  --font-button-promo-40: 900 16px/19px "Druk Wide Cy", var(--basic-font-family);
-  --font-category-tag: 400 15px/18px var(--basic-font-family);
-  --font-category-tag-number: 400 13px/16px var(--basic-font-family);
-  --font-category-tag-page: 400 20px/28px var(--basic-font-family);
-  --font-checkbox-label: 400 13px/16px var(--basic-font-family);
-  --font-game-tag: 400 15px/18px var(--basic-font-family);
-  --font-input-text: 400 15px/18px var(--basic-font-family);
-  --font-link-m-m: 500 15px/18px var(--basic-font-family);
-  --font-link-m-r: 400 15px/18px var(--basic-font-family);
-  --font-link-s-m: 500 13px/16px var(--basic-font-family);
-  --font-link-s-r: 400 13px/16px var(--basic-font-family);
-  --font-link-xs-r: 400 12px/14px var(--basic-font-family);
-  --font-tag: 400 12px/14px var(--basic-font-family);
-  --font-tag-list: 400 12px/14px var(--basic-font-family);
-  --font-tag-page: 400 15px/18px var(--basic-font-family);
+  
 
   --gradient-accent: linear-gradient(
     180deg,

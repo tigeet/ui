@@ -5,14 +5,16 @@ function usePress() {
 
   const onMouseDown = useCallback(() => setIsPressed(true), []);
   const onMouseUp = useCallback(() => setIsPressed(false), []);
+  const onMouseLeave = useCallback(() => setIsPressed(false), []);
   const onTouchStart = useCallback(() => setIsPressed(true), []);
   const onTouchEnd = useCallback(() => setIsPressed(false), []);
 
   const pressHandlers = {
-    onMouseDown: onMouseDown,
-    onMouseUp: onMouseUp,
-    onTouchStart: onTouchStart,
-    onTouchEnd: onTouchEnd,
+    onMouseDown,
+    onMouseUp,
+    onTouchStart,
+    onTouchEnd,
+    onMouseLeave,
   };
 
   return { pressed, pressHandlers };

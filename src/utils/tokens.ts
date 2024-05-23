@@ -62,6 +62,7 @@ const main = async () => {
       `src/**/*${theme}.tokens.css`,
       `**/theme/palette.${theme}.css`,
       `**/theme/semantic.${theme}.css`,
+      `**/theme/global.${theme}.css`,
     ];
 
     if (config.watch) {

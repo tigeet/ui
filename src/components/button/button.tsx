@@ -4,12 +4,16 @@ import { cn } from "@bem-react/classname";
 import clsx from "clsx";
 import "./button.css";
 import useHover from "@/hooks/useHover";
+import usePress from "@/hooks/usePress";
+import mergeHandlers from "@/utils/mergeHandlers";
+import Icon, { IconName } from "../icon/icon";
+import Typography from "../typography/typography";
 export type Variant = "primary" | "secondary" | "outline";
 export type Size = "sm" | "md" | "lg";
 
 type Props = {
   text?: string;
-  icon?: ReactNode;
+  icon?: IconName;
   variant?: Variant;
   size?: Size;
   onClick?: MouseEventHandler;
@@ -25,7 +29,8 @@ const Button = ({
   className,
   text,
   onClick,
-  as: ElementTag = "button",
+  href = "",
+  as = "button",
   icon,
   size = "md",
   variant = "primary",
@@ -39,6 +44,10 @@ const Button = ({
     [onClick]
   );
   const { hover, hoverHandlers } = useHover();
+  const { pressed, pressHandlers } = usePress();
+
+  const ElementTag = href && !disabled ? "a" : as;
+
   return (
     <ElementTag
       className={clsx(
@@ -50,13 +59,23 @@ const Button = ({
           rounded,
           disabled,
           hover,
+          pressed,
         })
       )}
+      href={href}
       onClick={handleClick}
-      {...hoverHandlers}
+      {...mergeHandlers(pressHandlers, hoverHandlers)}
     >
-      {icon && <span className={cnButton("icon")}>{icon}</span>}
-      {text && <span className={cnButton("text")}>{text}</span>}
+      {icon && (
+        <Icon
+          className="icon"
+          name="x"
+          size={size}
+          variant={variant}
+          disabled={disabled}
+        />
+      )}
+      {text && <Typography name={`button-${size}`}>{text}</Typography>}
     </ElementTag>
   );
 };
