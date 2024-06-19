@@ -1,0 +1,60 @@
+.toggle {
+  position: relative;
+  display: flex;
+  width: 40px;
+  border-radius: 1000px;
+  height: 24px;
+
+  box-sizing: border-box;
+  padding: 2px;
+  align-items: center;
+  transition: background-color 0.15s ease;
+  background-color: var(--fill-secondary-disabled);
+  &_hover {
+    background-color: var(--fill-secondary-hover);
+  }
+
+  &_checked {
+    background-color: var(--fill-accent);
+  }
+
+  &_hover&_checked {
+    background-color: var(--fill-accent-hover);
+  }
+
+  &_disabled,
+  &_disabled&_hover,
+  &_disabled&_checked,
+  &_disabled&_hover&_checked {
+    background-color: var(--fill-secondary-disabled);
+  }
+
+  &-whitespace {
+    flex-grow: 0;
+    width: 0%;
+    transition: flex 0.15s ease;
+    &_checked {
+      flex-grow: 1;
+    }
+  }
+
+  &-pin {
+    flex: 0 0 auto;
+    height: 20px;
+    width: 20px;
+    background-color: var(--fill-totalWhite);
+    border-radius: 1000px;
+  }
+
+  &-control {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+}

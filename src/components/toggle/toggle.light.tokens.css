@@ -1,0 +1,16 @@
+:root {
+  --checkbox-18-br: 4px;
+  --checkbox-18-gap: 8px;
+  --checkbox-18-height: 18px;
+  --checkbox-18-width: 18px;
+  --checkbox-background-transition: background-color 0.15s linear;
+  --checkbox-color-checked: var(--fill-accent);
+  --checkbox-color-checked-hover: var(--fill-accent-hover);
+  --checkbox-color-disabled: var(--fill-secondary-disabled);
+  --checkbox-color-unchecked: var(--fill-secondary-default);
+  --checkbox-color-unchecked-hover: var(--fill-secondary-hover);
+  --checkbox-label-color: var(--text-secondary-default);
+  --checkbox-tick-color-checked: var(--icon-inverse);
+  --checkbox-tick-color-checked-hover: var(--icon-inverse);
+  --checkbox-tick-color-disabled: var(--icon-inverse-disabled);
+}
