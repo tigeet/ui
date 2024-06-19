@@ -26,6 +26,7 @@ type Props = {
   value: string;
   disabled?: boolean;
   readOnly?: boolean;
+  rounded?: boolean;
   placeholder?: string;
   onSubmit?: () => void;
 };
@@ -38,6 +39,7 @@ const Input = ({
   readOnly = false,
   disabled = false,
   mobile = false,
+  rounded = false,
   placeholder,
   onSubmit,
   onClear,
@@ -59,7 +61,10 @@ const Input = ({
     <div
       onClick={() => !disabled && controlRef.current?.focus()}
       onSubmit={onSubmit}
-      className={clsx(className, cnInput({ mobile, disabled, hover, focused }))}
+      className={clsx(
+        className,
+        cnInput({ mobile, desktop: !mobile, disabled, hover, focused, rounded })
+      )}
       {...hoverHandlers}
       {...focusHandlers}
     >
@@ -79,19 +84,21 @@ const Input = ({
           placeholder={placeholder}
           onChange={onChange}
         />
-        {value.length > 0 && (
+        {(mobile || value.length > 0) && (
           <IconButton
             onClick={handleClear}
             size="md"
             className={cnInput("clearButton")}
             variant="secondary"
             icon="x"
+            hover={mobile}
           />
         )}
       </div>
-      {!mobile && value.length > 1 && (
+      {(mobile || value.length > 1) && (
         <Button
-          size="lg"
+          variant={!mobile || value.length > 1 ? "primary" : "secondary"}
+          size={mobile ? "md" : "lg"}
           disabled={disabled}
           className={cnInput("searchButton")}
           text="Найти"

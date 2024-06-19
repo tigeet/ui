@@ -45,7 +45,7 @@ const IconButton = ({
         name={icon}
         variant={variant}
         size={size}
-        hover={hover}
+        hover={hover || forceHover}
         disabled={disabled}
       />
     </button>

@@ -31,6 +31,9 @@ export const Default: Story = {
     mobile: {
       control: { type: "boolean" },
     },
+    rounded: {
+      control: { type: "boolean" },
+    },
     value: {
       control: { type: "text" },
     },
@@ -42,6 +45,7 @@ export const Default: Story = {
     disabled: false,
     mobile: false,
     value: "",
+    rounded: true,
     placeholder: "Введите текст",
   },
   render: (args) => <Component {...args} />,

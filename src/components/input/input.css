@@ -1,23 +1,7 @@
 .input {
-  border-radius: 4px;
   display: flex;
   align-items: center;
-  border-radius: 8px;
   overflow: hidden;
-  height: 40px;
-  background-color: var(--fill-secondary-default);
-  outline: 2px solid transparent;
-
-  &_focused {
-    outline-color: var(--border-selected);
-  }
-  &_hover {
-    background-color: var(--fill-secondary-hover);
-  }
-
-  &_mobile {
-    border-radius: 1000px;
-  }
 
   &-controlWrapper {
     flex: 1 1 auto;
@@ -30,6 +14,7 @@
   &-searchIcon {
     flex: 0 0 auto;
   }
+
   &-control {
     flex: 1 1 auto;
     border: none;
@@ -44,7 +29,34 @@
   }
 
   &-searchButton {
-    border-radius: 0 !important;
+    flex: 0 0 auto;
+    z-index: 0;
     transform: none !important;
   }
+}
+
+.input_desktop.input {
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--fill-secondary-default);
+  outline: 2px solid transparent;
+  &_rounded {
+    border-radius: 40px 8px 8px 40px;
+  }
+  &_focused {
+    outline-color: var(--border-selected);
+  }
+  &_hover {
+    background-color: var(--fill-secondary-hover);
+  }
+
+  .input-searchButton {
+    border-radius: 0 !important;
+  }
+}
+
+.input_mobile.input {
+  height: 40px;
+  border-bottom: 1px solid var(--border-primary);
+  padding: 0 16px;
 }
