@@ -1,15 +1,20 @@
 .icon {
   display: inline-flex;
-  &_variant_primary {
+  transition: color 0.15s ease;
+  &_variant_inverse {
     color: var(--icon-inverse);
   }
 
-  &_variant_secondary {
+  &_variant_primary {
     color: var(--icon-primary);
   }
 
-  &_variant_outline {
+  &_variant_accent {
     color: var(--icon-accent);
+  }
+
+  &_variant_secondary {
+    color: var(--icon-secondary-default);
   }
 
   &_size_sm {
@@ -23,21 +28,41 @@
   }
 
   &_size_lg {
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
   }
 }
+.icon_hover.icon {
+  &_variant_inverse {
+    color: var(--icon-inverse-hover);
+  }
 
-.icon_disabled.icon {
   &_variant_primary {
-    color: var(--icon-inverse-disabled);
+    color: var(--icon-primary-hover);
+  }
+
+  &_variant_accent {
+    color: var(--icon-accent-hover);
   }
 
   &_variant_secondary {
+    color: var(--icon-secondary-selected);
+  }
+}
+.icon_disabled.icon {
+  &_variant_inverse {
+    color: var(--icon-inverse-disabled);
+  }
+
+  &_variant_primary {
     color: var(--icon-primary-disabled);
   }
 
-  &_variant_outline {
+  &_variant_accent {
     color: var(--icon-accent-disabled);
+  }
+
+  &_variant_secondary {
+    color: var(--icon-secondary-disabled);
   }
 }

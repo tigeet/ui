@@ -17,13 +17,13 @@ export const Default: Story = {
     },
     variant: {
       control: "inline-radio",
-      options: ["primary", "secondary", "outline"],
+      options: ["primary", "secondary", "accent", "inverse"],
     },
     disabled: { control: "boolean" },
   },
   args: {
     size: "md",
-    variant: "outline",
+    variant: "accent",
     disabled: false,
   },
   render: (args) => (

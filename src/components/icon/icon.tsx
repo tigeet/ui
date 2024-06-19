@@ -5,6 +5,7 @@ import ChevronUp from "./svg/chevron-up.svg";
 import ChevronDown from "./svg/chevron-down.svg";
 import ChevronLeft from "./svg/chevron-left.svg";
 import ChevronRight from "./svg/chevron-right.svg";
+import Search from "./svg/search.svg";
 import Check from "./svg/check.svg";
 import { ReactNode } from "react";
 import "./icon.css";
@@ -15,6 +16,7 @@ export const iconNames = [
   "chevron-left",
   "chevron-right",
   "check",
+  "search",
 ] as const;
 
 export type IconName = (typeof iconNames)[number];
@@ -25,26 +27,32 @@ const icons: Record<IconName, ReactNode> = {
   "chevron-left": <ChevronLeft />,
   "chevron-right": <ChevronRight />,
   check: <Check />,
+  search: <Search />,
 };
 
+export type IconVariant = "primary" | "secondary" | "accent" | "inverse";
 type Props = {
   size?: "sm" | "md" | "lg";
-  variant?: "primary" | "secondary" | "outline";
+  variant?: IconVariant;
   className?: string;
   disabled?: boolean;
   name: IconName;
+  hover?: boolean;
 };
 
 const cnIcon = cn("icon");
 const Icon = ({
   className,
-  variant = "outline",
+  variant = "primary",
   size = "md",
   name,
+  hover = false,
   disabled = false,
 }: Props) => {
   return (
-    <span className={clsx(className, cnIcon({ variant, size, disabled }))}>
+    <span
+      className={clsx(className, cnIcon({ variant, size, disabled, hover }))}
+    >
       {icons[name]}
     </span>
   );

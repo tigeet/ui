@@ -1,76 +1,4 @@
 :root[data-theme="dark"] { 
-  --border-error: var(--red-550);
-  --border-primary: var(--white-850);
-  --border-selected: var(--green-extra-550);
-  --border-success: var(--green-550);
-
-  --fill-accent: var(--green-extra-750);
-  --fill-accent-disabled: var(--black-550);
-  --fill-accent-hover: var(--green-extra-650);
-  --fill-accent-nonactive: var(--black-300);
-  --fill-accent-nonactive-hover: var(--black-200);
-  --fill-accentBrand: var(--gradient-accent);
-  --fill-accentBrand-disabled: var(--black-550);
-  --fill-accentBrand-hover: var(--yellow-extra-550);
-  --fill-bg: var(--black-800);
-  --fill-color-alert: var(--red-550);
-  --fill-color-success: var(--green-500);
-  --fill-color-warning: var(--orange-500);
-  --fill-counter: var(--yellow-450);
-  --fill-island: var(--black-650);
-  --fill-secondary-default: var(--black-550);
-  --fill-secondary-disabled: var(--black-550);
-  --fill-secondary-hover: var(--black-350);
-  --fill-secondary-subdue-default: var(--black-250);
-  --fill-totalWhite: var(--white-1000);
-  --fill-totalWhite-disabled: var(--black-550);
-
-  
-
-  --gradient-accent: linear-gradient(
-    180deg,
-    var(--green-extra-550) 0%,
-    var(--yellow-extra-550) 100%
-  );
-  --gradient-accent-hover: linear-gradient(
-    180deg,
-    var(--yellow-extra-550) 0%,
-    #a1ff07 100%
-  );
-
-  --icon-accent: var(--green-extra-550);
-  --icon-accent-disabled: var(--black-550);
-  --icon-accent-hover: var(--yellow-extra-550);
-  --icon-error: var(--red-500);
-  --icon-inverse: var(--black-800);
-  --icon-inverse-disabled: var(--black-350);
-  --icon-primary: var(--white-1000);
-  --icon-primary-disabled: var(--black-350);
-  --icon-secondary-default: var(--white-300);
-  --icon-secondary-selected: var(--white-100);
-  --icon-secondary-strong-default: var(--black-350);
-  --icon-secondary-strong-hover-link: var(--blue-450);
-  --icon-success: var(--green-500);
-
-  --line-error: var(--red-550);
-  --line-primary: var(--white-850);
-  --line-selected: var(--green-extra-550);
-  --line-success: var(--green-550);
-
-  --text-accent: var(--green-extra-550);
-  --text-accent-disabled: var(--black-550);
-  --text-accent-hover: var(--yellow-extra-550);
-  --text-error: var(--red-500);
-  --text-inverse: var(--black-800);
-  --text-inverse-disabled: var(--black-350);
-  --text-primary: var(--white-1000);
-  --text-primary-disabled: var(--black-350);
-  --text-secondary-default: var(--white-350);
-  --text-secondary-selected: var(--white-100);
-  --text-secondary-strong-default: var(--white-900);
-  --text-secondary-strong-hover-link: var(--blue-450);
-  --text-success: var(--green-500);
-  --basic-font-family: Roboto;
   --black-100: #8a8a8a;
   --black-1000: #000;
   --black-150: #828282;
@@ -312,6 +240,76 @@
   --yellow-extra-850: #73b11a;
   --yellow-extra-900: #6aa515;
   --yellow-extra-950: #619911;
+  --border-error: var(--red-550);
+  --border-primary: var(--white-850);
+  --border-selected: var(--green-extra-550);
+  --border-success: var(--green-550);
+
+  --fill-accent: var(--green-extra-750);
+  --fill-accent-disabled: var(--black-550);
+  --fill-accent-hover: var(--green-extra-650);
+  --fill-accent-nonactive: var(--black-300);
+  --fill-accent-nonactive-hover: var(--black-200);
+  --fill-accentBrand: var(--gradient-accent);
+  --fill-accentBrand-disabled: var(--black-550);
+  --fill-accentBrand-hover: var(--yellow-extra-550);
+  --fill-bg: var(--black-800);
+  --fill-color-alert: var(--red-550);
+  --fill-color-success: var(--green-500);
+  --fill-color-warning: var(--orange-500);
+  --fill-counter: var(--yellow-450);
+  --fill-island: var(--black-650);
+  --fill-secondary-default: var(--black-550);
+  --fill-secondary-disabled: var(--black-550);
+  --fill-secondary-hover: var(--black-350);
+  --fill-secondary-subdue-default: var(--black-250);
+  --fill-totalWhite: var(--white-1000);
+  --fill-totalWhite-disabled: var(--black-550);
+
+  --gradient-accent: linear-gradient(
+    180deg,
+    var(--green-extra-550) 0%,
+    var(--yellow-extra-550) 100%
+  );
+  --gradient-accent-hover: linear-gradient(
+    180deg,
+    var(--yellow-extra-550) 0%,
+    #a1ff07 100%
+  );
+
+  --icon-accent: var(--green-extra-550);
+  --icon-accent-disabled: var(--black-550);
+  --icon-accent-hover: var(--yellow-extra-550);
+  --icon-error: var(--red-500);
+  --icon-inverse: var(--black-800);
+  --icon-inverse-disabled: var(--black-350);
+  --icon-primary: var(--white-1000);
+  --icon-primary-disabled: var(--black-350);
+  --icon-secondary-default: var(--white-300);
+  --icon-secondary-selected: var(--white-100);
+  --icon-secondary-strong-default: var(--black-350);
+  --icon-secondary-strong-hover-link: var(--blue-450);
+  --icon-success: var(--green-500);
+
+  --line-error: var(--red-550);
+  --line-primary: var(--white-850);
+  --line-selected: var(--green-extra-550);
+  --line-success: var(--green-550);
+
+  --text-accent: var(--green-extra-550);
+  --text-accent-disabled: var(--black-550);
+  --text-accent-hover: var(--yellow-extra-550);
+  --text-error: var(--red-500);
+  --text-inverse: var(--black-800);
+  --text-inverse-disabled: var(--black-350);
+  --text-primary: var(--white-1000);
+  --text-primary-disabled: var(--black-350);
+  --text-secondary-default: var(--white-350);
+  --text-secondary-selected: var(--white-100);
+  --text-secondary-strong-default: var(--white-900);
+  --text-secondary-strong-hover-link: var(--blue-450);
+  --text-success: var(--green-500);
+  --basic-font-family: Roboto;
   --font-age-tag: 500 11px/13px var(--basic-font-family);
   --font-button-sm: 500 13px/15px var(--basic-font-family);
   --font-button-md: 500 13px/15px var(--basic-font-family);
@@ -501,4 +499,316 @@
   --icon-secondary-selected: var(--white-100);
   --icon-secondary-strong-default: var(--black-350);
   --icon-secondary-strong-hover-link: var(--blue-450);
-  --icon-success: var(--green-500)}
+  --icon-success: var(--green-500);
+  --age-rating-border-radius: 6px;
+  --age-rating-cl-text: var(--text-primary);
+  --age-rating-green-cl-bg: var(--fill-color-success);
+  --age-rating-height: 18px;
+  --age-rating-orange-cl-bg: var(--fill-color-warning);
+  --age-rating-padding: 5px 5px 4px 5px;
+  --age-rating-red-cl-bg: var(--fill-color-alert);
+  --basic-font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --button-border-radius-24: 4px;
+  --button-border-radius-32: 6px;
+  --button-border-radius-40: 8px;
+  --button-cl-bg-empty: transparent;
+  --button-cl-bg-empty-disabled: transparent;
+  --button-cl-bg-empty-hover: transparent;
+  --button-cl-bg-primary: var(--fill-accentBrand);
+  --button-cl-bg-primary-disabled: var(--fill-accentBrand-disabled);
+  --button-cl-bg-primary-hover: var(--fill-accentBrand-hover);
+  --button-cl-bg-promo: var(--fill-accentBrand);
+  --button-cl-bg-promo-disabled: var(--fill-accentBrand-disabled);
+  --button-cl-bg-promo-hover: var(--fill-accentBrand-hover);
+  --button-cl-bg-secondary: var(--fill-secondary-default);
+  --button-cl-bg-secondary-disabled: var(--fill-secondary-disabled);
+  --button-cl-bg-secondary-hover: var(--fill-secondary-hover);
+  --button-cl-icon-empty: var(--icon-accent);
+  --button-cl-icon-empty-disabled: var(--icon-accent-disabled);
+  --button-cl-icon-empty-hover: var(--icon-accent-hover);
+  --button-cl-icon-primary: var(--icon-inverse);
+  --button-cl-icon-primary-disabled: var(--icon-inverse-disabled);
+  --button-cl-icon-primary-hover: var(--icon-inverse);
+  --button-cl-icon-secondary: var(--icon-primary);
+  --button-cl-icon-secondary-disabled: var(--icon-primary-disabled);
+  --button-cl-icon-secondary-hover: var(--icon-primary);
+  --button-cl-text-empty: var(--text-accent);
+  --button-cl-text-empty-disabled: var(--text-accent-disabled);
+  --button-cl-text-empty-hover: var(--text-accent-hover);
+  --button-cl-text-primary: var(--text-inverse);
+  --button-cl-text-primary-disabled: var(--text-inverse-disabled);
+  --button-cl-text-primary-hover: var(--text-inverse);
+  --button-cl-text-promo: var(--text-inverse);
+  --button-cl-text-promo-disabled: var(--text-inverse-disabled);
+  --button-cl-text-promo-hover: var(--text-inverse);
+  --button-cl-text-secondary: var(--text-primary);
+  --button-cl-text-secondary-disabled: var(--text-primary-disabled);
+  --button-cl-text-secondary-hover: var(--text-primary);
+  --button-gap-24: 4px;
+  --button-gap-32: 8px;
+  --button-gap-40: 8px;
+  --button-height-24: 24px;
+  --button-height-32: 32px;
+  --button-height-40: 40px;
+  --button-padding-24-icon: 6px;
+  --button-padding-24-text: 0 8px;
+  --button-padding-32-icon: 8px;
+  --button-padding-32-text: 0 12px;
+  --button-padding-40-icon: 12px;
+  --button-padding-40-text: 0 16px;
+  --button-padding-40-text-promo: 0 24px;
+  --button-press-transition: transform 0.1s ease;
+
+  --category-tag-cl-bg: var(--fill-bg);
+  --category-tag-cl-bg-hover: var(--fill-secondary-default);
+  --category-tag-cl-bg-pressed: var(--fill-totalWhite);
+  --category-tag-cl-icon: var(--icon-secondary-default);
+  --category-tag-cl-icon-hover: var(--icon-primary);
+  --category-tag-cl-icon-pressed: var(--icon-inverse);
+  --category-tag-cl-text: var(--text-secondary-default);
+  --category-tag-cl-text-hover: var(--text-primary);
+  --category-tag-cl-text-pressed: var(--text-inverse);
+  --category-tag-icon-gap: 12px;
+  --category-tag-info-bg: var(--fill-accent);
+  --category-tag-info-color: var(--text-primary);
+  --category-tag-info-color-exp: var(--color-base);
+  --category-tag-info-gap: 8px;
+  --category-tag-info-padding: 1px 4px;
+  --category-tag-padding: 7px 12px;
+  --category-tag-page-icon-gap: 12px;
+  --category-tag-page-padding: 6px 12px;
+
+  --checkbox-18-br: 4px;
+  --checkbox-18-gap: 8px;
+  --checkbox-18-height: 18px;
+  --checkbox-18-width: 18px;
+  --checkbox-background-transition: background-color 0.15s linear;
+  --checkbox-color-checked: var(--fill-accent);
+  --checkbox-color-checked-hover: var(--fill-accent-hover);
+  --checkbox-color-disabled: var(--fill-accent-disabled);
+  --checkbox-color-unchecked: var(--fill-accent-nonactive);
+  --checkbox-color-unchecked-hover: var(--fill-accent-nonactive-hover);
+  --checkbox-label-color: var(--text-secondary-default);
+  --checkbox-tick-color-checked: var(--icon-primary);
+  --checkbox-tick-color-checked-hover: var(--icon-primary);
+  --checkbox-tick-color-disabled: var(--icon-primary-disabled);
+
+  --float-button-background: var(--fill-secondary-default);
+  --float-button-background-hover: var(--fill-secondary-hover);
+  --float-button-background-pressed: var(--fill-secondary-hover);
+  --float-button-icon-color: var(--icon-primary);
+  --float-button-shadow: 0 1px 12px 0 rgba(14, 21, 47, 0.12),
+    0 3px 5px 0 rgba(14, 21, 47, 0.1);
+
+  --game-tag-cl-bg: var(--fill-secondary-default);
+  --game-tag-cl-bg-hover: var(--fill-secondary-hover);
+  --game-tag-cl-bg-pressed: var(--fill-totalWhite);
+  --game-tag-cl-text: var(--text-secondary-strong-default);
+  --game-tag-cl-text-hover: var(--text-primary);
+  --game-tag-cl-text-pressed: var(--text-inverse);
+  --game-tag-height: 30px;
+  --game-tag-padding: 6px 10px;
+
+  --gc-input-token-cl-icon-hover: var(--icon-primary);
+  --gc-input-token-cl-icon-selected: var(--icon-primary);
+  --gc-input-token-cl-placeholder-hover: var(--text-primary);
+  --gc-input-token-cl-placeholder-selected: var(--text-primary);
+
+  --link-cl-accent: var(--text-accent);
+  --link-cl-accent-hover: var(--text-accent-hover);
+  --link-cl-inverse: var(--text-inverse);
+  --link-cl-inverse-hover: var(--text-secondary-default);
+  --link-cl-primary: var(--text-primary);
+  --link-cl-primary-hover: var(--text-accent-hover);
+  --link-cl-secondary: var(--text-secondary-default);
+  --link-cl-secondary-hover: var(--text-accent-hover);
+
+  --spin-default-border-color: #14e517;
+  --spin-filled-bg-color: #00000020;
+  --spin-filled-border-color: #fff;
+
+  --tag-cl-bg: var(--fill-secondary-default);
+  --tag-cl-bg-hover: var(--fill-secondary-hover);
+  --tag-cl-bg-pressed: var(--fill-totalWhite);
+  --tag-cl-text: var(--text-secondary-strong-default);
+  --tag-cl-text-hover: var(--text-primary);
+  --tag-cl-text-pressed: var(--text-inverse);
+  --tag-gap: 4px;
+  --tag-height-list: 24px;
+  --tag-height-page: 28px;
+  --tag-padding-list: 4px 8px;
+  --tag-padding-page: 6px 10px;
+
+  --tumbler-22-height: 22px;
+  --tumbler-22-spacing-horizontal: 2px;
+  --tumbler-22-spacing-vertical: 2px;
+  --tumbler-22-toggle-height: 18px;
+  --tumbler-22-toggle-width: 18px;
+  --tumbler-22-width: 40px;
+  --tumbler-active-bg: var(--fill-accent);
+  --tumbler-active-fg: var(--fill-totalWhite);
+  --tumbler-active-hover-bg: var(--fill-accent-hover);
+  --tumbler-active-hover-fg: var(--fill-totalWhite);
+  --tumbler-bg: var(--fill-accent-nonactive);
+  --tumbler-disabled-bg: var(--fill-accent-nonactive);
+  --tumbler-disabled-fg: var(--fill-totalWhite-disabled);
+  --tumbler-fg: var(--fill-totalWhite);
+  --tumbler-hover-bg: var(--fill-accent-nonactive-hover);
+  --tumbler-hover-fg: var(--fill-totalWhite);
+  --age-rating-border-radius: 6px;
+  --age-rating-cl-text: var(--text-primary);
+  --age-rating-green-cl-bg: var(--fill-color-success);
+  --age-rating-height: 18px;
+  --age-rating-orange-cl-bg: var(--fill-color-warning);
+  --age-rating-padding: 5px 5px 4px 5px;
+  --age-rating-red-cl-bg: var(--fill-color-alert);
+  --basic-font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --button-border-radius-24: 4px;
+  --button-border-radius-32: 6px;
+  --button-border-radius-40: 8px;
+  --button-cl-bg-empty: transparent;
+  --button-cl-bg-empty-disabled: transparent;
+  --button-cl-bg-empty-hover: transparent;
+  --button-cl-bg-primary: var(--fill-accentBrand);
+  --button-cl-bg-primary-disabled: var(--fill-accentBrand-disabled);
+  --button-cl-bg-primary-hover: var(--fill-accentBrand-hover);
+  --button-cl-bg-promo: var(--fill-accentBrand);
+  --button-cl-bg-promo-disabled: var(--fill-accentBrand-disabled);
+  --button-cl-bg-promo-hover: var(--fill-accentBrand-hover);
+  --button-cl-bg-secondary: var(--fill-secondary-default);
+  --button-cl-bg-secondary-disabled: var(--fill-secondary-disabled);
+  --button-cl-bg-secondary-hover: var(--fill-secondary-hover);
+  --button-cl-icon-empty: var(--icon-accent);
+  --button-cl-icon-empty-disabled: var(--icon-accent-disabled);
+  --button-cl-icon-empty-hover: var(--icon-accent-hover);
+  --button-cl-icon-primary: var(--icon-inverse);
+  --button-cl-icon-primary-disabled: var(--icon-inverse-disabled);
+  --button-cl-icon-primary-hover: var(--icon-inverse);
+  --button-cl-icon-secondary: var(--icon-primary);
+  --button-cl-icon-secondary-disabled: var(--icon-primary-disabled);
+  --button-cl-icon-secondary-hover: var(--icon-primary);
+  --button-cl-text-empty: var(--text-accent);
+  --button-cl-text-empty-disabled: var(--text-accent-disabled);
+  --button-cl-text-empty-hover: var(--text-accent-hover);
+  --button-cl-text-primary: var(--text-inverse);
+  --button-cl-text-primary-disabled: var(--text-inverse-disabled);
+  --button-cl-text-primary-hover: var(--text-inverse);
+  --button-cl-text-promo: var(--text-inverse);
+  --button-cl-text-promo-disabled: var(--text-inverse-disabled);
+  --button-cl-text-promo-hover: var(--text-inverse);
+  --button-cl-text-secondary: var(--text-primary);
+  --button-cl-text-secondary-disabled: var(--text-primary-disabled);
+  --button-cl-text-secondary-hover: var(--text-primary);
+  --button-gap-24: 4px;
+  --button-gap-32: 8px;
+  --button-gap-40: 8px;
+  --button-height-24: 24px;
+  --button-height-32: 32px;
+  --button-height-40: 40px;
+  --button-padding-24-icon: 6px;
+  --button-padding-24-text: 0 8px;
+  --button-padding-32-icon: 8px;
+  --button-padding-32-text: 0 12px;
+  --button-padding-40-icon: 12px;
+  --button-padding-40-text: 0 16px;
+  --button-padding-40-text-promo: 0 24px;
+  --button-press-transition: transform 0.1s ease;
+
+  --category-tag-cl-bg: var(--fill-bg);
+  --category-tag-cl-bg-hover: var(--fill-secondary-default);
+  --category-tag-cl-bg-pressed: var(--fill-totalWhite);
+  --category-tag-cl-icon: var(--icon-secondary-default);
+  --category-tag-cl-icon-hover: var(--icon-primary);
+  --category-tag-cl-icon-pressed: var(--icon-inverse);
+  --category-tag-cl-text: var(--text-secondary-default);
+  --category-tag-cl-text-hover: var(--text-primary);
+  --category-tag-cl-text-pressed: var(--text-inverse);
+  --category-tag-icon-gap: 12px;
+  --category-tag-info-bg: var(--fill-accent);
+  --category-tag-info-color: var(--text-primary);
+  --category-tag-info-color-exp: var(--color-base);
+  --category-tag-info-gap: 8px;
+  --category-tag-info-padding: 1px 4px;
+  --category-tag-padding: 7px 12px;
+  --category-tag-page-icon-gap: 12px;
+  --category-tag-page-padding: 6px 12px;
+
+  --checkbox-18-br: 4px;
+  --checkbox-18-gap: 8px;
+  --checkbox-18-height: 18px;
+  --checkbox-18-width: 18px;
+  --checkbox-background-transition: background-color 0.15s linear;
+  --checkbox-color-checked: var(--fill-accent);
+  --checkbox-color-checked-hover: var(--fill-accent-hover);
+  --checkbox-color-disabled: var(--fill-accent-disabled);
+  --checkbox-color-unchecked: var(--fill-accent-nonactive);
+  --checkbox-color-unchecked-hover: var(--fill-accent-nonactive-hover);
+  --checkbox-label-color: var(--text-secondary-default);
+  --checkbox-tick-color-checked: var(--icon-primary);
+  --checkbox-tick-color-checked-hover: var(--icon-primary);
+  --checkbox-tick-color-disabled: var(--icon-primary-disabled);
+
+  --float-button-background: var(--fill-secondary-default);
+  --float-button-background-hover: var(--fill-secondary-hover);
+  --float-button-background-pressed: var(--fill-secondary-hover);
+  --float-button-icon-color: var(--icon-primary);
+  --float-button-shadow: 0 1px 12px 0 rgba(14, 21, 47, 0.12),
+    0 3px 5px 0 rgba(14, 21, 47, 0.1);
+
+  --game-tag-cl-bg: var(--fill-secondary-default);
+  --game-tag-cl-bg-hover: var(--fill-secondary-hover);
+  --game-tag-cl-bg-pressed: var(--fill-totalWhite);
+  --game-tag-cl-text: var(--text-secondary-strong-default);
+  --game-tag-cl-text-hover: var(--text-primary);
+  --game-tag-cl-text-pressed: var(--text-inverse);
+  --game-tag-height: 30px;
+  --game-tag-padding: 6px 10px;
+
+  --gc-input-token-cl-icon-hover: var(--icon-primary);
+  --gc-input-token-cl-icon-selected: var(--icon-primary);
+  --gc-input-token-cl-placeholder-hover: var(--text-primary);
+  --gc-input-token-cl-placeholder-selected: var(--text-primary);
+
+  --link-cl-accent: var(--text-accent);
+  --link-cl-accent-hover: var(--text-accent-hover);
+  --link-cl-inverse: var(--text-inverse);
+  --link-cl-inverse-hover: var(--text-secondary-default);
+  --link-cl-primary: var(--text-primary);
+  --link-cl-primary-hover: var(--text-accent-hover);
+  --link-cl-secondary: var(--text-secondary-default);
+  --link-cl-secondary-hover: var(--text-accent-hover);
+
+  --spin-default-border-color: #14e517;
+  --spin-filled-bg-color: #00000020;
+  --spin-filled-border-color: #fff;
+
+  --tag-cl-bg: var(--fill-secondary-default);
+  --tag-cl-bg-hover: var(--fill-secondary-hover);
+  --tag-cl-bg-pressed: var(--fill-totalWhite);
+  --tag-cl-text: var(--text-secondary-strong-default);
+  --tag-cl-text-hover: var(--text-primary);
+  --tag-cl-text-pressed: var(--text-inverse);
+  --tag-gap: 4px;
+  --tag-height-list: 24px;
+  --tag-height-page: 28px;
+  --tag-padding-list: 4px 8px;
+  --tag-padding-page: 6px 10px;
+
+  --tumbler-22-height: 22px;
+  --tumbler-22-spacing-horizontal: 2px;
+  --tumbler-22-spacing-vertical: 2px;
+  --tumbler-22-toggle-height: 18px;
+  --tumbler-22-toggle-width: 18px;
+  --tumbler-22-width: 40px;
+  --tumbler-active-bg: var(--fill-accent);
+  --tumbler-active-fg: var(--fill-totalWhite);
+  --tumbler-active-hover-bg: var(--fill-accent-hover);
+  --tumbler-active-hover-fg: var(--fill-totalWhite);
+  --tumbler-bg: var(--fill-accent-nonactive);
+  --tumbler-disabled-bg: var(--fill-accent-nonactive);
+  --tumbler-disabled-fg: var(--fill-totalWhite-disabled);
+  --tumbler-fg: var(--fill-totalWhite);
+  --tumbler-hover-bg: var(--fill-accent-nonactive-hover);
+  --tumbler-hover-fg: var(--fill-totalWhite)}

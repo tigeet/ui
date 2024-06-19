@@ -4,9 +4,9 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "sb": "OUT='./theme' yarn tokens && storybook dev -p 6006",
-    "tokens": "source ./scripts/tokens.sh",
-    "tokens:watch": "WATCH=true source ./scripts/tokens.sh"
+    "sb": "cross-env  OUT='./theme' yarn tokens && storybook dev -p 6006",
+    "tokens": "cross-env bash ./scripts/tokens.sh",
+    "tokens:watch": "cross-env  WATCH=true bash ./scripts/tokens.sh"
   },
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
@@ -16,6 +16,7 @@
     "@storybook/addon-onboarding": "^8.1.1",
     "@svgr/webpack": "^8.1.0",
     "clsx": "^2.1.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^7.1.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "file-loader": "^6.2.0",

@@ -41,7 +41,7 @@ const Checkbox = ({
           name="check"
           disabled={disabled}
           className={cnCheckbox("tick")}
-          variant="primary"
+          variant="inverse"
           size="sm"
         />
       )}

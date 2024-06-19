@@ -1,0 +1,50 @@
+.input {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 40px;
+  background-color: var(--fill-secondary-default);
+  outline: 2px solid transparent;
+
+  &_focused {
+    outline-color: var(--border-selected);
+  }
+  &_hover {
+    background-color: var(--fill-secondary-hover);
+  }
+
+  &_mobile {
+    border-radius: 1000px;
+  }
+
+  &-controlWrapper {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  &-searchIcon {
+    flex: 0 0 auto;
+  }
+  &-control {
+    flex: 1 1 auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    color: var(--text-secondary-default);
+    transition: color 0.15s ease;
+    &_hover {
+      color: var(--text-secondary-selected);
+    }
+  }
+
+  &-searchButton {
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+}

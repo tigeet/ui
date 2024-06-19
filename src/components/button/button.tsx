@@ -5,7 +5,7 @@ import "./button.css";
 import useHover from "@/hooks/useHover";
 import usePress from "@/hooks/usePress";
 import mergeHandlers from "@/utils/mergeHandlers";
-import Icon, { IconName } from "../icon/icon";
+import Icon, { IconName, IconVariant } from "../icon/icon";
 import Typography from "../typography/typography";
 export type Variant = "primary" | "secondary" | "outline";
 export type Size = "sm" | "md" | "lg";
@@ -23,6 +23,11 @@ type Props = {
   rounded?: boolean;
 };
 
+const mapIconColor: Record<Variant, IconVariant> = {
+  primary: "inverse",
+  secondary: "secondary",
+  outline: "accent",
+};
 const cnButton = cn("button");
 const Button = ({
   className,
@@ -38,7 +43,7 @@ const Button = ({
 }: Props) => {
   const handleClick = useCallback(
     (event: React.MouseEvent) => {
-      onClick?.(event);
+      !disabled && onClick?.(event);
     },
     [onClick]
   );
@@ -70,7 +75,7 @@ const Button = ({
           className="icon"
           name="x"
           size={size}
-          variant={variant}
+          variant={mapIconColor[variant]}
           disabled={disabled}
         />
       )}

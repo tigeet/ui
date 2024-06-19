@@ -1,0 +1,47 @@
+.iconButton {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  &-icon {
+    z-index: 10;
+  }
+  &_size_sm {
+    width: 18px;
+    height: 18px;
+  }
+
+  &_size_md {
+    width: 24px;
+    height: 24px;
+  }
+
+  &_size_lg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    transition: background-color 0.15s ease;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 4px;
+  }
+  &_rounded::before {
+    border-radius: 1000px;
+  }
+
+  &_hover::before {
+    background-color: var(--fill-secondary-strong-default);
+  }
+}
