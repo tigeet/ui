@@ -1,0 +1,16 @@
+.option {
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  border-radius: 4px;
+  background-color: var(--option-bg);
+  padding: 6px;
+  &_hover {
+    background-color: var(--option-bg-hover);
+  }
+  &_selected {
+    background-color: var(--option-bg-selected);
+  }
+}

@@ -331,6 +331,8 @@
   --font-tag: 400 12px/14px var(--basic-font-family);
   --font-tag-list: 400 12px/14px var(--basic-font-family);
   --font-tag-page: 400 15px/18px var(--basic-font-family);
+  --font-select-value: 400 15px/18px var(--basic-font-family);
+  --font-select-option: 400 14px/16px var(--basic-font-family);
   --age-rating-border-radius: 6px;
   --age-rating-cl-text: var(--text-primary);
   --age-rating-green-cl-bg: var(--fill-color-success);
@@ -811,4 +813,7 @@
   --tumbler-disabled-fg: var(--fill-totalWhite-disabled);
   --tumbler-fg: var(--fill-totalWhite);
   --tumbler-hover-bg: var(--fill-accent-nonactive-hover);
-  --tumbler-hover-fg: var(--fill-totalWhite)}
+  --tumbler-hover-fg: var(--fill-totalWhite);
+  --option-bg: var(--fill-secondary-default);
+  --option-bg-hover: var(--fill-secondary-hover);
+  --option-bg-selected: var(--white-250)}

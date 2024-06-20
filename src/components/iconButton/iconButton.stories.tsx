@@ -15,6 +15,9 @@ export const Default: Story = {
     rounded: {
       control: { type: "boolean" },
     },
+    strong: {
+      control: { type: "boolean" },
+    },
     size: {
       control: { type: "inline-radio" },
       options: ["sm", "md", "lg"],
@@ -30,6 +33,7 @@ export const Default: Story = {
     },
   },
   args: {
+    strong: false,
     rounded: false,
     disabled: false,
     variant: "primary",

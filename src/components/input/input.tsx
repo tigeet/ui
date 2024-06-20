@@ -63,7 +63,15 @@ const Input = ({
       onSubmit={onSubmit}
       className={clsx(
         className,
-        cnInput({ mobile, desktop: !mobile, disabled, hover, focused, rounded })
+        cnInput({
+          mobile,
+          desktop: !mobile,
+          disabled,
+          hover,
+          focused,
+          rounded,
+          withButton: mobile || value.length > 1,
+        })
       )}
       {...hoverHandlers}
       {...focusHandlers}
@@ -90,6 +98,7 @@ const Input = ({
             size="md"
             className={cnInput("clearButton")}
             variant="secondary"
+            strong={!mobile}
             icon="x"
             hover={mobile}
           />

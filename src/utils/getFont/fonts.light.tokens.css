@@ -27,4 +27,6 @@
   --font-tag-list: 400 12px/14px var(--basic-font-family);
   --font-tag-page: 400 15px/18px var(--basic-font-family);
   --font-text-area: 400 12px/16px var(--basic-font-family);
+  --font-select-value: 400 15px/18px var(--basic-font-family);
+  --font-select-option: 400 14px/16px var(--basic-font-family);
 }

@@ -71,6 +71,7 @@
   &_subscription {
     font: var(--font-subscription);
   }
+
   &_tag {
     font: var(--font-tag);
   }
@@ -82,5 +83,12 @@
   }
   &_text-area {
     font: var(--font-text-area);
+  }
+
+  &_select-value {
+    font: var(--font-select-value);
+  }
+  &_select-option {
+    font: var(--font-select-option);
   }
 }

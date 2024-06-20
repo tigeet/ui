@@ -4,9 +4,8 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "sb": "cross-env  OUT='./theme' yarn tokens && storybook dev -p 6006",
-    "tokens": "cross-env bash ./scripts/tokens.sh",
-    "tokens:watch": "cross-env  WATCH=true bash ./scripts/tokens.sh"
+    "sb": "cross-env npm run tokens && storybook dev -p 6006",
+    "tokens": "cross-env OUT='./theme' bash ./scripts/tokens.sh"
   },
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
@@ -22,6 +21,7 @@
     "file-loader": "^6.2.0",
     "glob-watcher": "^6.0.0",
     "next": "14.2.3",
+    "npm-run-all": "^4.1.5",
     "postcss-loader": "^8.1.1",
     "postcss-nested": "^6.0.1",
     "postcss-nesting": "^12.1.4",
@@ -33,7 +33,8 @@
     "storybook": "^8.1.1",
     "style-loader": "^4.0.0",
     "ts-node": "^10.9.2",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "yarn-run-all": "^3.1.1"
   },
   "devDependencies": {
     "@storybook/nextjs": "^8.1.1",

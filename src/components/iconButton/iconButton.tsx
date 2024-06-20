@@ -16,6 +16,7 @@ type Props = {
   disabled?: boolean;
   hover?: boolean;
   rounded?: boolean;
+  strong?: boolean;
 };
 
 const cnIconButton = cn("iconButton");
@@ -24,6 +25,7 @@ const IconButton = ({
   onClick,
   variant,
   icon,
+  strong = false,
   hover: forceHover = false,
   size = "md",
   disabled = false,
@@ -35,7 +37,13 @@ const IconButton = ({
     <button
       className={clsx(
         className,
-        cnIconButton({ hover: hover || forceHover, disabled, rounded, size })
+        cnIconButton({
+          hover: hover || forceHover,
+          disabled,
+          rounded,
+          size,
+          strong,
+        })
       )}
       {...hoverHandlers}
       onClick={onClick}

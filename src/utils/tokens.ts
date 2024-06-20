@@ -66,7 +66,7 @@ const main = async () => {
     ];
 
     if (config.watch) {
-      await watch(pattern, async (done: Function) => {
+      watch(pattern, async (done: Function) => {
         await makeTokens(theme, pattern);
         done();
       });

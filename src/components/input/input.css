@@ -40,7 +40,13 @@
   border-radius: 8px;
   background-color: var(--fill-secondary-default);
   outline: 2px solid transparent;
+  overflow: hidden;
+
   &_rounded {
+    border-radius: 40px;
+  }
+
+  &_rounded&_withButton {
     border-radius: 40px 8px 8px 40px;
   }
   &_focused {

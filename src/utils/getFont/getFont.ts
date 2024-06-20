@@ -30,6 +30,8 @@ export const fonts = [
   "tag-list",
   "tag-page",
   "text-area",
+  "select-value",
+  "select-option",
 ] as const;
 export type Font = (typeof fonts)[number];
 

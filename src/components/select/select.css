@@ -1,0 +1,42 @@
+.select {
+  position: relative;
+  display: block;
+
+  &-base {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 4px 8px;
+    height: 40px;
+    background-color: var(--fill-secondary-default);
+    border-radius: 4px;
+
+    &_focused {
+      outline: 1px solid var(--border-selected);
+    }
+  }
+
+  &-value {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: 1 1 auto;
+    color: var(--text-primary);
+  }
+  &-dropdown {
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+    left: 0;
+    min-width: 100%;
+    background-color: var(--fill-secondary-default);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.178);
+    border-radius: 4px;
+  }
+  &-options {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}

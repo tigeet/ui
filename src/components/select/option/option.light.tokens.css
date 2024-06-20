@@ -1,0 +1,5 @@
+:root {
+  --option-bg: var(--fill-secondary-default);
+  --option-bg-hover: var(--fill-secondary-hover);
+  --option-bg-selected: var(--white-750);
+}
