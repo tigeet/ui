@@ -1,13 +1,21 @@
 import type { Preview } from "@storybook/react";
 import "../theme/dark.css";
 import "../theme/light.css";
+import { Canvas } from "@storybook/addon-docs";
 import React from "react";
+import { withThemeByClassName } from "@storybook/addon-themes";
+import { themes } from "@storybook/theming";
+
+import { addons } from "@storybook/manager-api";
 
 const withTheme = (Story, { globals }) => {
   const root: HTMLElement | null = document.querySelector(":root");
-  if (root) root.dataset.theme = globals.theme ?? "light";
+  const theme = globals.theme ?? "light";
+  if (root) root.dataset.theme = theme;
+
   return <Story />;
 };
+
 const preview: Preview = {
   decorators: [withTheme],
   parameters: {
@@ -35,3 +43,9 @@ const preview: Preview = {
 };
 
 export default preview;
+
+export const parameters = {
+  docs: {
+    theme: themes.dark,
+  },
+};

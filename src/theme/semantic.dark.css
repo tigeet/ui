@@ -19,6 +19,7 @@
   --fill-counter: var(--yellow-450);
   --fill-island: var(--black-650);
   --fill-secondary-default: var(--black-550);
+  --fill-secondary-strong-default: var(--black-550);
   --fill-secondary-disabled: var(--black-550);
   --fill-secondary-hover: var(--black-350);
   --fill-secondary-subdue-default: var(--black-250);
@@ -43,6 +44,7 @@
   --icon-inverse: var(--black-800);
   --icon-inverse-disabled: var(--black-350);
   --icon-primary: var(--white-1000);
+  --icon-primary-hover: var(--white-950);
   --icon-primary-disabled: var(--black-350);
   --icon-secondary-default: var(--white-300);
   --icon-secondary-selected: var(--white-100);
