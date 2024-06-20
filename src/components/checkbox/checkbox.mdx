@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import * as CheckboxStories from "./checkbox.stories";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+Компонент Checkbox может быть отмеченным или неотмеченным, иметь лейбл, а также может быть отключен.
+
+## Примеры
+
+### Состояние
+
+Компонент Checkbox имеет два состояния `checked` и `unchecked`
+
+<Canvas of={CheckboxStories.StateStory} />
+
+### Disabled
+
+Компонент Checkbox может быть отключен. Компонент сохранит состояние, однако не будет интерактивным.
+
+<Canvas of={CheckboxStories.DisabledStory} />
+
+### Label
+
+Компонент Checkbox может иметь подпись, расположенную слева или справа: `labelPosition: left`, `labelPosition: right`
+
+<Canvas of={CheckboxStories.LabelStory} />

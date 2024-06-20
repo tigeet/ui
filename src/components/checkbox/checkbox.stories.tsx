@@ -22,9 +22,67 @@ export const Default: Story = {
     disabled: {
       type: "boolean",
     },
+    label: {
+      control: "text",
+    },
+  },
+  args: {
+    label: "Label",
+    disabled: false,
+  },
+  render: (args) => <Component {...args} />,
+};
+
+export const StateStory: Story = {
+  argTypes: {
+    disabled: {
+      type: "boolean",
+    },
   },
   args: {
     disabled: false,
   },
-  render: (args) => <Component {...args} />,
+  render: (args) => (
+    <div style={{ display: "flex", gap: "8px" }}>
+      <Checkbox {...args} checked />
+      <Checkbox {...args} />
+    </div>
+  ),
+};
+
+export const DisabledStory: Story = {
+  render: () => (
+    <div style={{ display: "flex", gap: "8px" }}>
+      <Checkbox disabled checked />
+      <Checkbox disabled />
+    </div>
+  ),
+};
+
+export const LabelStory: Story = {
+  argTypes: {
+    disabled: {
+      type: "boolean",
+    },
+    label: {
+      type: "string",
+    },
+  },
+  args: {
+    disabled: false,
+    label: "Checkbox Label",
+  },
+  render: (args) => (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        width: "300px",
+        gap: "16px",
+      }}
+    >
+      <Component {...args} labelPosition="left" />
+      <Component {...args} labelPosition="right" />
+    </div>
+  ),
 };
