@@ -1,0 +1,38 @@
+import { Meta, Canvas } from "@storybook/addon-docs";
+import * as InputStories from "./input.stories";
+
+<Meta of={InputStories} />
+
+# Input
+
+Поисковая строка имеет имеет несколько состояний в зависимости от введенного текста, возможность скругления граней и два варианта - для десктопа и телефонов.
+
+## Варианты
+
+Поисковая строка имеет два варианта - для десктопа и телефонов
+
+<Canvas of={InputStories.PlatformStory} />
+
+## Состояния
+
+Поисковая строка имеет несколько состояний в зависимости от введенного текста
+
+### Пустая строка
+
+<Canvas of={InputStories.EmptyStory} />
+### Строка из одного символа
+<Canvas of={InputStories.CharStory} />
+### Строка из двух и более символов
+<Canvas of={InputStories.StringStory} />
+
+## Скругления
+
+Поисковая строка может иметь скругленные грани
+
+<Canvas of={InputStories.RoundedStory} />
+
+## Disabled
+
+Поисковая строка может быть заблокирована, при этом она перестанет быть интерактивной
+
+<Canvas of={InputStories.DisabledStory} />

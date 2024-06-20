@@ -44,8 +44,151 @@ export const Default: Story = {
     disabled: false,
     mobile: false,
     value: "",
-    rounded: true,
+    rounded: false,
     placeholder: "Введите текст",
   },
   render: (args) => <Component {...args} />,
+};
+
+export const PlatformStory: Story = {
+  argTypes: {
+    disabled: {
+      control: { type: "boolean" },
+    },
+
+    rounded: {
+      control: { type: "boolean" },
+    },
+    value: {
+      control: { type: "text" },
+    },
+    placeholder: {
+      control: { type: "text" },
+    },
+  },
+  args: {
+    disabled: false,
+    value: "",
+    rounded: false,
+    placeholder: "Введите текст",
+  },
+  render: (args) => (
+    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      <Component {...args} />
+      <Component {...args} mobile />
+    </div>
+  ),
+};
+
+export const EmptyStory: Story = {
+  argTypes: {
+    disabled: {
+      control: { type: "boolean" },
+    },
+    rounded: {
+      control: { type: "boolean" },
+    },
+
+    placeholder: {
+      control: { type: "text" },
+    },
+  },
+  args: {
+    disabled: false,
+    rounded: false,
+    placeholder: "Введите текст",
+  },
+  render: (args) => (
+    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      <Input {...args} value="" />
+      <Input {...args} value="" mobile />
+    </div>
+  ),
+};
+
+export const CharStory: Story = {
+  argTypes: {
+    disabled: {
+      control: { type: "boolean" },
+    },
+    rounded: {
+      control: { type: "boolean" },
+    },
+
+    placeholder: {
+      control: { type: "text" },
+    },
+  },
+  args: {
+    disabled: false,
+    rounded: false,
+    placeholder: "Введите текст",
+  },
+  render: (args) => (
+    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      <Input {...args} value="S" />
+      <Input {...args} value="S" mobile />
+    </div>
+  ),
+};
+
+export const StringStory: Story = {
+  argTypes: {
+    disabled: {
+      control: { type: "boolean" },
+    },
+    rounded: {
+      control: { type: "boolean" },
+    },
+
+    placeholder: {
+      control: { type: "text" },
+    },
+  },
+  args: {
+    disabled: false,
+    rounded: false,
+    placeholder: "Введите текст",
+  },
+  render: (args) => (
+    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      <Input {...args} value="Search" />
+      <Input {...args} value="Search" mobile />
+    </div>
+  ),
+};
+
+export const RoundedStory: Story = {
+  argTypes: {
+    disabled: {
+      control: { type: "boolean" },
+    },
+
+    placeholder: {
+      control: { type: "text" },
+    },
+    value: { control: { type: "text" } },
+  },
+  args: {
+    disabled: false,
+    rounded: false,
+    value: "S",
+    placeholder: "Введите текст",
+  },
+  render: (args) => <Input {...args} rounded />,
+};
+
+export const DisabledStory: Story = {
+  argTypes: {
+    placeholder: {
+      control: { type: "text" },
+    },
+    value: { control: { type: "text" } },
+  },
+  args: {
+    rounded: false,
+    value: "S",
+    placeholder: "Введите текст",
+  },
+  render: (args) => <Input {...args} disabled />,
 };

@@ -10,6 +10,8 @@ const meta: Meta<typeof IconButton> = {
 export default meta;
 type Story = StoryObj<typeof IconButton>;
 
+const variants = ["primary", "secondary", "accent", "inverse"] as const;
+const sizes = ["sm", "md", "lg"] as const;
 export const Default: Story = {
   argTypes: {
     rounded: {
@@ -20,11 +22,11 @@ export const Default: Story = {
     },
     size: {
       control: { type: "inline-radio" },
-      options: ["sm", "md", "lg"],
+      options: sizes,
     },
     variant: {
       control: "inline-radio",
-      options: ["primary", "secondary", "accent", "inverse"],
+      options: variants,
     },
     disabled: { control: "boolean" },
     icon: {
@@ -41,4 +43,102 @@ export const Default: Story = {
     icon: "x",
   },
   render: (args) => <IconButton {...args} />,
+};
+
+export const SizeStory: Story = {
+  args: {
+    rounded: false,
+    disabled: false,
+    icon: "search",
+  },
+  render: (args) => (
+    <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+      {sizes.map((size) => (
+        <IconButton key={size} {...args} size={size} />
+      ))}
+    </div>
+  ),
+};
+
+export const VariantStory: Story = {
+  args: {
+    rounded: false,
+    disabled: false,
+    icon: "search",
+  },
+  render: (args) => (
+    <div
+      style={{
+        display: "flex",
+        gap: "8px",
+        alignItems: "center",
+      }}
+    >
+      {variants.map((variants) => (
+        <IconButton key={variants} {...args} variant={variants} />
+      ))}
+    </div>
+  ),
+};
+
+export const RoundedStory: Story = {
+  args: {
+    disabled: false,
+    size: "md",
+    icon: "search",
+  },
+  render: (args) => (
+    <div
+      style={{
+        display: "flex",
+        gap: "8px",
+        alignItems: "center",
+      }}
+    >
+      {variants.map((variants) => (
+        <IconButton key={variants} {...args} rounded variant={variants} />
+      ))}
+    </div>
+  ),
+};
+
+export const DisabledStory: Story = {
+  args: {
+    rounded: false,
+    icon: "search",
+  },
+  render: (args) => (
+    <div
+      style={{
+        display: "flex",
+        gap: "8px",
+        alignItems: "center",
+      }}
+    >
+      {variants.map((variants) => (
+        <IconButton key={variants} {...args} disabled variant={variants} />
+      ))}
+    </div>
+  ),
+};
+
+export const StrongStory: Story = {
+  args: {
+    rounded: false,
+    disabled: false,
+    icon: "search",
+  },
+  render: (args) => (
+    <div
+      style={{
+        display: "flex",
+        gap: "8px",
+        alignItems: "center",
+      }}
+    >
+      {variants.map((variants) => (
+        <IconButton key={variants} {...args} variant={variants} strong />
+      ))}
+    </div>
+  ),
 };
