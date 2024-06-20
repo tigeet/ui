@@ -48,10 +48,13 @@ const Input = ({
   const { focusHandlers, focused } = useFocus();
   const controlRef = useRef<HTMLInputElement | null>(null);
 
-  const handleClear = useCallback((e: React.MouseEvent) => {
-    focused && controlRef.current?.focus();
-    onClear?.(e);
-  }, []);
+  const handleClear = useCallback(
+    (e: React.MouseEvent) => {
+      focused && controlRef.current?.focus();
+      onClear?.(e);
+    },
+    [focused, onClear]
+  );
 
   useKeyPress({
     callback: onSubmit,

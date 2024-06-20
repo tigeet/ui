@@ -1,7 +1,13 @@
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect } from "react";
 
-function useHover() {
+type Props = {
+  onHover?: () => void;
+};
+function useHover(props?: Props) {
   const [hover, setHover] = useState(false);
+  useEffect(() => {
+    if (hover) props?.onHover?.();
+  }, [hover, props]);
 
   const onMouseEnter = useCallback(() => setHover(true), []);
   const onMouseLeave = useCallback(() => setHover(false), []);

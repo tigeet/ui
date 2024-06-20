@@ -240,7 +240,6 @@
   --yellow-extra-850: #73b11a;
   --yellow-extra-900: #6aa515;
   --yellow-extra-950: #619911;
-  --basic-font-family: Roboto;
   --border-error: var(--red-550);
   --border-primary: var(--white-850);
   --border-selected: var(--green-extra-550);
@@ -310,6 +309,7 @@
   --text-secondary-strong-default: var(--white-900);
   --text-secondary-strong-hover-link: var(--blue-450);
   --text-success: var(--green-500);
+  --basic-font-family: Roboto;
   --font-age-tag: 500 11px/13px var(--basic-font-family);
   --font-button-sm: 500 13px/15px var(--basic-font-family);
   --font-button-md: 500 13px/15px var(--basic-font-family);

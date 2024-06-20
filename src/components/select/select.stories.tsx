@@ -18,22 +18,28 @@ const Component = () => {
     setValue(value);
   }, []);
   return (
-    <Select
-      value={value}
-      onChange={handleChange}
-      placeholder="Выберите значение"
-    >
-      <Group label="Россия">
-        <Option label="Санкт-Петербург" value="spb" />
-        <Option label="Москва" value="moscow" />
-      </Group>
-      <Group label="Франция">
-        <Option label="Париж" value="paris" />
-      </Group>
-      <Group label="Италия">
-        <Option label="Рим" value="rome" />
-      </Group>
-    </Select>
+    <>
+      <Select
+        className="select_stories-default"
+        value={value}
+        onChange={handleChange}
+        placeholder="Выберите значение"
+      >
+        <Group label="Россия">
+          <Option label="Санкт-Петербург" value="spb" />
+          <Option label="Москва" value="moscow" />
+        </Group>
+        <Group label="Франция">
+          <Option label="Париж" value="paris" />
+        </Group>
+        <Group label="Италия">
+          <Option label="Рим" value="rome" />
+        </Group>
+      </Select>
+      <style>{`.select_stories-default {
+        width: 300px
+      }`}</style>
+    </>
   );
 };
 export const Default: Story = {

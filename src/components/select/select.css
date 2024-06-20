@@ -5,9 +5,14 @@
   &-base {
     display: flex;
     cursor: pointer;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
     padding: 4px 8px;
     height: 40px;
+    border: none;
+    outline: none;
+
     background-color: var(--fill-secondary-default);
     border-radius: 4px;
 
@@ -20,23 +25,41 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    text-align: start;
     flex: 1 1 auto;
     color: var(--text-primary);
   }
   &-dropdown {
     position: absolute;
-    top: 100%;
+
     margin-top: 8px;
     left: 0;
     min-width: 100%;
     background-color: var(--fill-secondary-default);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.178);
     border-radius: 4px;
+
+    &_open {
+      animation: dropdown 0.15s;
+    }
   }
+
   &-options {
     display: flex;
     flex-direction: column;
     padding: 4px;
     border-radius: 4px;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+
+  from {
+    opacity: 1;
+    top: 100%;
   }
 }

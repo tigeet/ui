@@ -11,7 +11,7 @@ const useFocus = () => {
     setFocused(false);
   }, []);
 
-  const focusHandlers = useMemo(() => ({ onFocus, onBlur }), []);
+  const focusHandlers = useMemo(() => ({ onFocus, onBlur }), [onBlur, onFocus]);
   return { focused, focusHandlers };
 };
 

@@ -45,7 +45,7 @@ const Button = ({
     (event: React.MouseEvent) => {
       !disabled && onClick?.(event);
     },
-    [onClick]
+    [disabled, onClick]
   );
   const { hover, hoverHandlers } = useHover();
   const { pressed, pressHandlers } = usePress();
