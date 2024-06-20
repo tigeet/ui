@@ -8,6 +8,10 @@
     flex-direction: row-reverse;
   }
 
+  &-label {
+    cursor: pointer;
+  }
+
   &-box {
     position: relative;
     display: inline-flex;

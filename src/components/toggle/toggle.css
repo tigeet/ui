@@ -1,34 +1,47 @@
 .toggle {
-  position: relative;
   display: flex;
-  width: 40px;
-  border-radius: 1000px;
-  height: 24px;
-
-  box-sizing: border-box;
-  padding: 2px;
+  justify-content: space-between;
   align-items: center;
-  transition: background-color 0.15s ease;
-  background-color: var(--fill-secondary-disabled);
-  &_hover {
-    background-color: var(--fill-secondary-hover);
+  cursor: pointer;
+  gap: 8px;
+  &_labelPosition_right {
+    flex-direction: row-reverse;
   }
 
-  &_checked {
-    background-color: var(--fill-accent);
+  &-label {
+    cursor: pointer;
   }
+  &-box {
+    position: relative;
+    display: flex;
+    width: 40px;
+    border-radius: 1000px;
+    height: 24px;
 
-  &_hover&_checked {
-    background-color: var(--fill-accent-hover);
-  }
-
-  &_disabled,
-  &_disabled&_hover,
-  &_disabled&_checked,
-  &_disabled&_hover&_checked {
+    box-sizing: border-box;
+    padding: 2px;
+    align-items: center;
+    transition: background-color 0.15s ease;
     background-color: var(--fill-secondary-disabled);
-  }
+    &_hover {
+      background-color: var(--fill-secondary-hover);
+    }
 
+    &_checked {
+      background-color: var(--fill-accent);
+    }
+
+    &_hover&_checked {
+      background-color: var(--fill-accent-hover);
+    }
+
+    &_disabled,
+    &_disabled&_hover,
+    &_disabled&_checked,
+    &_disabled&_hover&_checked {
+      background-color: var(--fill-secondary-disabled);
+    }
+  }
   &-whitespace {
     flex-grow: 0;
     width: 0%;

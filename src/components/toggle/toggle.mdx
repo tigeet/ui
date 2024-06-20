@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import * as ToggleStories from "./toggle.stories";
+
+<Meta of={ToggleStories} />
+
+# Toggle
+
+Компонент Toggle может быть отмеченным или неотмеченным, иметь лейбл, а также может быть отключен.
+
+## Примеры
+
+### Состояние
+
+Компонент Toggle имеет два состояния `checked` и `unchecked`
+
+<Canvas of={ToggleStories.StateStory} />
+
+### Disabled
+
+Компонент Toggle может быть отключен. Компонент сохранит состояние, однако не будет интерактивным.
+
+<Canvas of={ToggleStories.DisabledStory} />
+
+### Label
+
+Компонент Toggle может иметь подпись, расположенную слева или справа: `labelPosition: left`, `labelPosition: right`
+
+<Canvas of={ToggleStories.LabelStory} />
