@@ -31,8 +31,9 @@ const icons: Record<IconName, ReactNode> = {
 };
 
 export type IconVariant = "primary" | "secondary" | "accent" | "inverse";
+export type IconSize = "sm" | "md" | "lg";
 type Props = {
-  size?: "sm" | "md" | "lg";
+  size?: IconSize;
   variant?: IconVariant;
   className?: string;
   disabled?: boolean;

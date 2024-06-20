@@ -1,0 +1,26 @@
+import { Meta, Canvas } from "@storybook/addon-docs";
+import * as IconStories from "./icon.stories";
+
+<Meta of={IconStories} />
+
+# Icon
+
+Иконка имеет различные варианты, размеры и может быть выключена.
+
+## Варианты
+
+Иконка имеет 4 варианта: `primary`, `secondary`, `accent`, `inverse`
+
+<Canvas of={IconStories.VariantStory} />
+
+## Размер
+
+Иконка имеет 3 размера: `small (sm)`, `medium (md)`, и `large (lg)`
+
+<Canvas of={IconStories.SizeStory} />
+
+## Disabled
+
+Иконка может быть отключена: `disabled = true`
+
+<Canvas of={IconStories.DisabledStory} />
