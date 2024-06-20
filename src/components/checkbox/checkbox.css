@@ -10,6 +10,7 @@
 
   &-label {
     cursor: pointer;
+    color: var(--text-primary);
   }
 
   &-box {

@@ -71,21 +71,28 @@ const Select = ({
     [options]
   );
 
-  const selectNext = useCallback(() => {
-    if (!open) return;
+  const selectNext = useCallback(
+    (e?: KeyboardEvent) => {
+      if (!open) return;
+      e?.preventDefault();
+      setHoverIndex((hoverIndex) =>
+        hoverIndex === null ? 0 : Math.min(hoverIndex + 1, options.length - 1)
+      );
+    },
+    [open, options.length]
+  );
 
-    setHoverIndex((hoverIndex) =>
-      hoverIndex === null ? 0 : Math.min(hoverIndex + 1, options.length - 1)
-    );
-  }, [open, options.length]);
+  const selectPrev = useCallback(
+    (e?: KeyboardEvent) => {
+      if (!open) return;
 
-  const selectPrev = useCallback(() => {
-    if (!open) return;
-
-    setHoverIndex((hoverIndex) =>
-      hoverIndex === null ? null : Math.max(0, hoverIndex - 1)
-    );
-  }, [open]);
+      e?.preventDefault();
+      setHoverIndex((hoverIndex) =>
+        hoverIndex === null ? null : Math.max(0, hoverIndex - 1)
+      );
+    },
+    [open]
+  );
 
   const handleEnter = useCallback(
     (event?: KeyboardEvent) => {

@@ -11,7 +11,7 @@ type Props = {
   value: string;
 };
 
-const Option = ({ label, value }: Props) => {
+const SelectOption = ({ label, value }: Props) => {
   const { selected, select, register, hover: setHover, hovered } = useSelect();
 
   const handleHover = useCallback(() => setHover(value), [setHover, value]);
@@ -38,4 +38,4 @@ const Option = ({ label, value }: Props) => {
   );
 };
 
-export default memo(Option);
+export default memo(SelectOption);

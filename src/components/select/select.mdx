@@ -1,0 +1,60 @@
+import { Meta, Canvas } from "@storybook/addon-docs";
+import * as SelectStories from "./select.stories";
+
+<Meta of={SelectStories} />
+
+# Select
+
+Позволяет выбрать вариант из списка опций
+
+## Варианты
+
+Позволяет указать список вариантов, используя декларативный подход
+
+<Canvas of={SelectStories.OptionStory} />
+
+```tsx
+<Select
+  className="select_stories-default"
+  value={value}
+  onChange={handleChange}
+  placeholder="Выберите значение"
+>
+  <SelectOption label="Вариант 1" value="1" />
+  <SelectOption label="Вариант 2" value="2" />
+  <SelectOption label="Вариант 3" value="3" />
+  <SelectOption label="Вариант 4" value="4" />
+</Select>
+```
+
+## Группы
+
+Позволяет группировать варианты, используя декларативный подход
+
+<Canvas of={SelectStories.GroupStory} />
+
+```tsx
+<Select
+  className="select_stories-default"
+  value={value}
+  onChange={handleChange}
+  placeholder="Выберите значение"
+>
+  <SelectGroup label="Группа 1">
+    <SelectOption label="Вариант 1" value="1" />
+    <SelectOption label="Вариант 2" value="2" />
+  </SelectGroup>
+  <SelectGroup label="Группа 2">
+    <SelectOption label="Вариант 3" value="3" />
+  </SelectGroup>
+  <SelectGroup label="Группа 3">
+    <SelectOption label="Вариант 4" value="4" />
+  </SelectGroup>
+</Select>
+```
+
+## Использование
+
+```tsx
+import { Select, SelectGroup, SelectOption } from "@/components/select";
+```

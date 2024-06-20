@@ -9,7 +9,7 @@ type Props = {
   children?: ReactNode;
 };
 
-const Group = ({ label, children }: Props) => {
+const SelectGroup = ({ label, children }: Props) => {
   return (
     <>
       <div className={cnGroup()}>
@@ -20,4 +20,4 @@ const Group = ({ label, children }: Props) => {
   );
 };
 
-export default memo(Group);
+export default memo(SelectGroup);
