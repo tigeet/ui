@@ -1,0 +1,41 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import Button from "./button.tsx";
+import * as ButtonStories from "./button.stories.tsx";
+
+<Meta of={ButtonStories} />
+
+# Кнопка
+
+Компонент кнопки поддерживает несколько размеров, вариантов, скругление углов и блокировку. Кнопка также может отображать иконку.
+
+## Примеры использования
+
+### Размер
+
+Кнопка поддерживает три размера: `small (sm)`, `medium (md)`, и `large (lg)`.
+
+<Canvas of={ButtonStories.SizeStory} />
+
+### Вид
+
+Кнопка может быть одного из трёх видов: `primary`, `secondary`, и `outline`.
+
+<Canvas of={ButtonStories.VariantStory} />
+
+### Скругление
+
+Кнопка может быть скругленной.
+
+<Canvas of={ButtonStories.RoundedStory} />
+
+### Блокировка
+
+Кнопка может быть выключенной.
+
+<Canvas of={ButtonStories.DisabledStory} />
+
+### С иконкой
+
+Кнопка может содержать иконку.
+
+<Canvas of={ButtonStories.IconStory} />

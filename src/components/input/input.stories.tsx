@@ -12,14 +12,13 @@ type Story = StoryObj<typeof Input>;
 const Component = (args: Partial<React.ComponentProps<typeof Input>>) => {
   const [value, setValue] = useState("");
   const onClear = useCallback(() => setValue(""), []);
-  const onSubmit = useCallback(() => console.log("@input/onSubmit"), []);
+
   return (
     <Input
       {...args}
       value={args.value ? args.value : value}
       onChange={(e) => setValue(e.target.value)}
       onClear={onClear}
-      onSubmit={onSubmit}
     />
   );
 };

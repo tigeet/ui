@@ -5,7 +5,6 @@ import React from "react";
 
 const withTheme = (Story, { globals }) => {
   const root: HTMLElement | null = document.querySelector(":root");
-  console.log("@with theme", root);
   if (root) root.dataset.theme = globals.theme ?? "light";
   return <Story />;
 };

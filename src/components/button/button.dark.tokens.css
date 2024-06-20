@@ -41,9 +41,9 @@
   --button-cl-text-promo: var(--text-inverse);
   --button-cl-text-promo-disabled: var(--text-inverse-disabled);
   --button-cl-text-promo-hover: var(--text-inverse);
-  --button-cl-text-secondary: var(--text-primary);
-  --button-cl-text-secondary-disabled: var(--text-primary-disabled);
-  --button-cl-text-secondary-hover: var(--text-primary);
+  --button-cl-text-secondary: var(--text-secondary-default);
+  --button-cl-text-secondary-disabled: var(--text-disabled);
+  --button-cl-text-secondary-hover: var(--text-secondary-selected);
   --button-gap-24: 4px;
   --button-gap-32: 8px;
   --button-gap-40: 8px;

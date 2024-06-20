@@ -73,7 +73,7 @@ const Button = ({
       {icon && (
         <Icon
           className="icon"
-          name="x"
+          name={icon}
           size={size}
           variant={mapIconColor[variant]}
           disabled={disabled}
