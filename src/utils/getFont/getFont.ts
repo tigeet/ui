@@ -32,6 +32,7 @@ export const fonts = [
   "text-area",
   "select-value",
   "select-option",
+  "select-group",
 ] as const;
 export type Font = (typeof fonts)[number];
 

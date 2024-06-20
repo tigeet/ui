@@ -1,7 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Select, { Option } from "./select";
+import Select from "./select";
 import React, { useCallback, useState } from "react";
+import { TOption } from "./types";
+import Option from "./option/option";
+import Group from "./group/group";
 const meta: Meta<typeof Select> = {
   title: "Select",
   component: Select,
@@ -9,23 +12,28 @@ const meta: Meta<typeof Select> = {
 export default meta;
 type Story = StoryObj<typeof Select>;
 
-const options: Option<number>[] = [
-  { label: "Рим", value: 1 },
-  { label: "Санкт-Петербург", value: 2 },
-  { label: "Париж", value: 3 },
-];
 const Component = () => {
-  const [value, setValue] = useState<number | undefined>(undefined);
-  const handleChange = useCallback((value?: number) => {
+  const [value, setValue] = useState<string | undefined>(undefined);
+  const handleChange = useCallback((value?: string) => {
     setValue(value);
   }, []);
   return (
     <Select
-      options={options}
       value={value}
       onChange={handleChange}
       placeholder="Выберите значение"
-    />
+    >
+      <Group label="Россия">
+        <Option label="Санкт-Петербург" value="spb" />
+        <Option label="Москва" value="moscow" />
+      </Group>
+      <Group label="Франция">
+        <Option label="Париж" value="paris" />
+      </Group>
+      <Group label="Италия">
+        <Option label="Рим" value="rome" />
+      </Group>
+    </Select>
   );
 };
 export const Default: Story = {

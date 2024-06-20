@@ -287,6 +287,7 @@
   --font-text-area: 400 12px/16px var(--basic-font-family);
   --font-select-value: 400 15px/18px var(--basic-font-family);
   --font-select-option: 400 14px/16px var(--basic-font-family);
+  --font-select-group: 400 12px/14px var(--basic-font-family);
   --checkbox-18-br: 4px;
   --checkbox-18-gap: 8px;
   --checkbox-18-height: 18px;

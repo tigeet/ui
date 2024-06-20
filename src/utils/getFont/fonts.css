@@ -91,4 +91,7 @@
   &_select-option {
     font: var(--font-select-option);
   }
+  &_select-group {
+    font: var(--font-select-group);
+  }
 }

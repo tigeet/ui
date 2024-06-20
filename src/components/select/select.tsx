@@ -2,33 +2,29 @@ import { cn } from "@bem-react/classname";
 import "./select.css";
 import clsx from "clsx";
 import useHover from "@/hooks/useHover";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { ReactNode, memo, useCallback, useMemo, useRef, useState } from "react";
 import useOutsideClick from "@/hooks/useOutsideClick";
 import Icon from "../icon/icon";
-import Option from "./option/option";
 import Typography from "../typography/typography";
+import { TOption } from "./types";
+import { SelectContext } from "./providers/selectProvider";
 const cnSelect = cn("select");
 
-export type Option<T> = {
-  label: string;
-  value: T;
-};
-
-type Props<T> = {
-  options: Option<T>[];
+type Props = {
   className?: string;
-  value?: T;
-  onChange?: (value?: T) => void;
+  value?: string;
+  onChange?: (value?: string) => void;
   placeholder: string;
+  children?: ReactNode;
 };
 
-const Select = <T,>({
+const Select = ({
   className,
-  options,
   value,
   onChange,
   placeholder,
-}: Props<T>) => {
+  children,
+}: Props) => {
   const { hover, hoverHandlers } = useHover();
   const buttonRef = useRef<HTMLDivElement | null>(null);
   const [open, setOpen] = useState(false);
@@ -40,50 +36,55 @@ const Select = <T,>({
     ignore,
   });
 
+  const [options, setOptions] = useState<TOption[]>([]);
+
   const label = useMemo(
     () => options.find((option) => option.value === value)?.label,
     [value, options]
   );
 
-  const handleSelect = (clicked: T) => {
+  const handleSelect = (clicked: string) => {
     onChange?.(clicked === value ? undefined : clicked);
     handleClose();
   };
 
-  return (
-    <div className={clsx(className, cnSelect())}>
-      <div
-        ref={buttonRef}
-        {...hoverHandlers}
-        className={cnSelect("base", { hover, focused: open || hover })}
-        onClick={handleOpen}
-      >
-        <Typography name="select-value" className={cnSelect("value")}>
-          {label ?? placeholder}
-        </Typography>
+  const register = useCallback(
+    (option: TOption) => {
+      if (options.find(({ value }) => value === option.value)) return;
+      setOptions((options) => [...options, option]);
+    },
+    [options]
+  );
 
-        <Icon
-          variant="secondary"
-          className={cnSelect("icon")}
-          name="chevron-down"
-        />
-      </div>
-      {open && (
-        <div className={cnSelect("dropdown")} ref={dropdownRef}>
-          <div className={cnSelect("options")}>
-            {options.map((option) => (
-              <Option
-                label={option.label}
-                onClick={() => handleSelect(option.value)}
-                selected={option.value === value}
-                key={option.label}
-              />
-            ))}
-          </div>
+  return (
+    <SelectContext.Provider
+      value={{ options, register, selected: value, select: handleSelect }}
+    >
+      <div className={clsx(className, cnSelect())}>
+        <div
+          ref={buttonRef}
+          {...hoverHandlers}
+          className={cnSelect("base", { hover, focused: open || hover })}
+          onClick={handleOpen}
+        >
+          <Typography name="select-value" className={cnSelect("value")}>
+            {label ?? placeholder}
+          </Typography>
+
+          <Icon
+            variant="secondary"
+            className={cnSelect("icon")}
+            name="chevron-down"
+          />
         </div>
-      )}
-    </div>
+        {open && (
+          <div className={cnSelect("dropdown")} ref={dropdownRef}>
+            <div className={cnSelect("options")}>{children}</div>
+          </div>
+        )}
+      </div>
+    </SelectContext.Provider>
   );
 };
 
-export default Select;
+export default memo(Select);

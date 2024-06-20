@@ -1,0 +1,11 @@
+.group {
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary-default);
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: var(--option-bg);
+  padding: 4px 10px;
+}
